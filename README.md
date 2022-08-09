@@ -7,3 +7,7 @@ The project itself is not intended to be used as a template. There are a lot of 
 ### Example project overview
 
 https://doc.workfusion.com/enterprise/docs/iac/core/user-guide/odf/odf2-example-project/
+
+### Versions supported
+
+- [10.2.5](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.5)
