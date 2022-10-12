@@ -2,7 +2,7 @@
 
 The ODF 2 example project is created to demonstrate key features of the framework. It contains four simple Business Processes that operate on a mock data model. While functional, these processes do not perform anything practically useful.
 
-The project itself is not intended to be used as a template. There are a lot of details related to the WorkFusion build infrastructure. To quickly create your project from scratch, use the ODF 2 quickstart archetype.
+The project itself is not intended to be used as a template. To quickly create your project from scratch, use the [ODF 2 quickstart archetype](https://doc.workfusion.com/enterprise/docs/iac/core/user-guide/odf/odf2-simple-archetype/).
 
 ### Example project overview
 
@@ -10,4 +10,5 @@ https://doc.workfusion.com/enterprise/docs/iac/core/user-guide/odf/odf2-example-
 
 ### Versions supported
 
-- [10.2.5](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.5)
+- [10.2.5.26](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.5.26)
+- [10.2.6.10](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.6.10)
