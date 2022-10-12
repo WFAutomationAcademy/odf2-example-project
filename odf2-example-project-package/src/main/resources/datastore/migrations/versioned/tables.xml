@@ -1,0 +1,204 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?><databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.6.xsd">
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0001">
+        <createTable tableName="uc_odf2_example_project_transaction_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="parent_uuid" type="NVARCHAR(36)"/>
+            <column name="start_time" type="datetime2"/>
+            <column name="end_time" type="datetime2"/>
+            <column name="status" type="NVARCHAR(36)"/>
+            <column name="error_status" type="NVARCHAR(36)"/>
+            <column name="start_bp_uuid" type="NVARCHAR(36)"/>
+            <column name="is_stp" type="int"/>
+            <column name="split_status" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0002">
+        <createTable tableName="uc_odf2_example_project_exception_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_exception_v10_2_6_uc_odf2_example_project_transaction_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_6"/>
+            </column>
+            <column name="root_transaction_uuid" type="NVARCHAR(36)"/>
+            <column name="short_description" type="NVARCHAR(max)"/>
+            <column name="full_description" type="NVARCHAR(max)"/>
+            <column name="type" type="NVARCHAR(36)"/>
+            <column name="error_code" type="INT"/>
+            <column name="time_occurred" type="datetime2"/>
+            <column name="time_closed" type="datetime2  "/>
+            <column name="bp_uuid" type="NVARCHAR(36)"/>
+            <column name="bp_step_uuid" type="NVARCHAR(36)"/>
+            <column name="severity" type="NVARCHAR(36)"/>
+            <column name="screenshot_link" type="NVARCHAR(max)"/>
+            <column name="business_entity_uuid" type="NVARCHAR(36)"/>
+            <column name="status" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0003">
+        <createTable tableName="uc_odf2_example_project_monitor_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="monitor_id" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_time" type="NVARCHAR(256)"/>
+            <column name="completed_loops" type="INT"/>
+            <column name="last_polling_time" type="NVARCHAR(256)"/>
+            <column name="stopped" type="int"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0004">
+        <createTable tableName="uc_odf2_example_project_join_entity_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="parent_transaction" type="NVARCHAR(36)"/>
+            <column name="entity_uuid" type="NVARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="key" type="NVARCHAR(max)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0005">
+        <createTable tableName="uc_odf2_example_project_business_entity_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_business_entity_v10_2_6_uc_odf2_example_project_transaction_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_6"/>
+            </column>
+            <column name="external_id" type="NVARCHAR(256)"/>
+            <column name="type" type="NVARCHAR(256)"/>
+            <column name="status" type="NVARCHAR(256)"/>
+            <column name="external_link" type="NVARCHAR(2048)"/>
+            <column name="amount" type="INT"/>
+            <column name="date" type="DATE"/>
+            <column name="original_document_url" type="NVARCHAR(2048)"/>
+            <column name="ocr_result_url" type="NVARCHAR(2048)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0006">
+        <createTable tableName="uc_odf2_example_project_input_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_input_v10_2_6_uc_odf2_example_project_transaction_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_6"/>
+            </column>
+            <column name="from" type="NVARCHAR(256)"/>
+            <column name="to" type="NVARCHAR(256)"/>
+            <column name="subject" type="NVARCHAR(max)"/>
+            <column name="message" type="NVARCHAR(max)"/>
+            <column name="received" type="DATE"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0007">
+        <createTable tableName="uc_odf2_example_project_document_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="type" type="NVARCHAR(36)"/>
+            <column name="original_document_link" type="NVARCHAR(max)"/>
+            <column name="input_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_v10_2_6_uc_odf2_example_project_input_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_input_v10_2_6"/>
+            </column>
+            <column name="content" type="NVARCHAR(max)"/>
+            <column name="size" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0008">
+        <createTable tableName="uc_odf2_example_project_stage_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="NVARCHAR(max)"/>
+            <column name="description" type="NVARCHAR(max)"/>
+            <column name="stage_order" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0009">
+        <createTable tableName="uc_odf2_example_project_transaction_stage_log_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="stage_id" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_stage_log_v10_2_6_uc_odf2_example_project_stage_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_stage_v10_2_6"/>
+            </column>
+            <column name="transaction_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="uc_odf2_example_project_transaction_stage_log_v10_2_6_uc_odf2_example_project_transaction_v10_2_6" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_6"/>
+            </column>
+            <column name="bp_uuid" type="NVARCHAR(36)"/>
+            <column name="timestamp" type="DATE"/>
+            <column name="type" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0010">
+        <insert tableName="uc_odf2_example_project_stage_v10_2_6">
+            <column name="uuid" value="8a0fb79f-64ab-4b68-8d4f-ed9d21afb216"/>
+            <column name="name" value="markAsRead"/>
+            <column name="description" value="marking email as read"/>
+            <column name="stage_order" value="1"/>
+        </insert>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0011">
+        <createTable tableName="uc_odf2_example_project_monitor_configuration_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="monitor_class" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="polling_interval" type="NVARCHAR(256)"/>
+            <column name="sleep_time" type="NVARCHAR(256)"/>
+            <column name="max_loops" type="int"/>
+            <column name="max_running_time" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0012">
+        <createTable tableName="uc_odf2_example_project_config_v10_2_6">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="name" type="NVARCHAR(450)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="NVARCHAR(max)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_6_0013">
+        <createTable tableName="uc_odf2_example_project_ocr_cache_v10_2_6">
+            <column name="cache_key" type="NVARCHAR(256)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="document_xml_link" type="NVARCHAR(2048)"/>
+            <column name="pages" type="INT"/>
+            <column name="meta_info_pages" type="NVARCHAR(max)"/>
+            <column name="meta_info_xml_url" type="NVARCHAR(2048)"/>
+            <column name="creation_time" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
