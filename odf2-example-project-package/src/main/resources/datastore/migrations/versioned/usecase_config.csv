@@ -1,0 +1,4 @@
+"name","value"
+"odf.ocr.s3.bucket","doc-upload"
+"odf.ocr.cache.enabled","true"
+"example.attachments.bucket.name","doc-upload"
