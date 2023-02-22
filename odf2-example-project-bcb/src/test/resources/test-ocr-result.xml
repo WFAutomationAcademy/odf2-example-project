@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><document xmlns="http://ocr.crowdcomputingsystems.com/xml/schema-v1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" languages="" producer="Workfusion" version="1.0" xsi:schemaLocation="http://ocr.crowdcomputingsystems.com/xml/schema-v1.xml">
+<page height="3508" resolution="300" width="2480">
+<block b="372" blockName="" blockType="Text" l="1869" r="2306" t="319"><region><rect b="372" l="1869" r="2306" t="319"/></region>
+<text>
+<par lineSpacing="1340">
+<line b="366" baseline="358" l="1875" r="2300" t="325"><formatting lang="EnglishUnitedStates">wf-robot@mail.com</formatting></line></par>
+</text>
+</block>
+<block b="598" blockName="" blockType="Text" l="171" r="594" t="320"><region><rect b="598" l="171" r="594" t="320"/></region>
+<text>
+<par lineSpacing="1392">
+<line b="359" baseline="358" l="177" r="350" t="326"><formatting lang="EnglishUnitedStates">Amazon</formatting></line></par>
+<par lineSpacing="1392">
+<line b="426" baseline="417" l="179" r="588" t="384"><formatting lang="EnglishUnitedStates">410 Terry Ave. North</formatting></line>
+<line b="476" baseline="476" l="180" r="566" t="442"><formatting lang="EnglishUnitedStates">Seattle 98109-5210</formatting></line>
+<line b="533" baseline="533" l="178" r="243" t="501"><formatting lang="EnglishUnitedStates">WA</formatting></line></par>
+<par lineSpacing="1392">
+<line b="592" baseline="592" l="180" r="442" t="558"><formatting lang="EnglishUnitedStates">United States</formatting></line></par>
+</text>
+</block>
+<block b="1029" blockName="" blockType="Table" l="1593" r="2308" t="789"><region><rect b="1029" l="1593" r="2308" t="789"/></region>
+<row>
+<cell bottomBorder="White" height="53" leftBorder="White" rightBorder="White" topBorder="White" width="407">
+<text>
+<par lineSpacing="1070" startIndent="1800">
+<line b="825" baseline="825" l="1674" r="1891" t="795"><formatting lang="EnglishUnitedStates">Invoice Date:</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="53" leftBorder="White" rightBorder="White" topBorder="White" width="308">
+<text>
+<par align="Right" lineSpacing="1070">
+<line b="828" baseline="824" l="2111" r="2301" t="796"><formatting lang="EnglishUnitedStates">06/18/2021</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="64" leftBorder="White" rightBorder="White" topBorder="White" width="407">
+<text>
+<par lineSpacing="1070" startIndent="3100">
+<line b="888" baseline="888" l="1726" r="1891" t="859"><formatting lang="EnglishUnitedStates">Due Date:</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="64" leftBorder="White" rightBorder="White" topBorder="White" width="308">
+<text>
+<par align="Right" lineSpacing="1070">
+<line b="891" baseline="887" l="2111" r="2301" t="859"><formatting lang="EnglishUnitedStates">07/18/2021</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="63" leftBorder="White" rightBorder="White" topBorder="White" width="407">
+<text>
+<par lineSpacing="1070" startIndent="1800">
+<line b="952" baseline="951" l="1671" r="1891" t="923"><formatting lang="EnglishUnitedStates">Amount Due:</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="63" leftBorder="White" rightBorder="White" topBorder="White" width="308">
+<text>
+<par align="Right" lineSpacing="1070">
+<line b="957" baseline="952" l="2135" r="2301" t="922"><formatting lang="EnglishUnitedStates">$1,398.60</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="60" leftBorder="White" rightBorder="White" topBorder="White" width="407">
+<text>
+<par lineSpacing="1070">
+<line b="1023" baseline="1015" l="1599" r="1891" t="986"><formatting lang="EnglishUnitedStates">Payment Method:</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="60" leftBorder="White" rightBorder="White" topBorder="White" width="308">
+<text>
+<par align="Right" lineSpacing="1070">
+<line b="1023" baseline="1016" l="2194" r="2300" t="986"><formatting lang="EnglishUnitedStates">Paypal</formatting></line></par>
+</text></cell></row>
+</block>
+<block b="1204" blockName="" blockType="Text" l="179" r="1271" t="1124"><region><rect b="1204" l="179" r="1271" t="1124"/></region>
+<text>
+<par lineSpacing="2810">
+<line b="1199" baseline="1198" l="185" r="1265" t="1131"><formatting lang="EnglishUnitedStates">Invoice 113577-2021-06-18</formatting></line></par>
+</text>
+</block>
+<block b="2097" blockName="" blockType="Table" l="170" r="2310" t="1322"><region><rect b="2097" l="170" r="2310" t="1322"/></region>
+<row>
+<cell height="77" leftBorder="White" rightBorder="White" topBorder="White" width="539">
+<text>
+<par lineSpacing="1070" startIndent="1200">
+<line b="1358" baseline="1357" l="227" r="309" t="1329"><formatting lang="EnglishUnitedStates">Item</formatting></line></par>
+</text></cell>
+<cell height="77" leftBorder="White" rightBorder="White" topBorder="White" width="850">
+<text>
+<par lineSpacing="1070" startIndent="1400">
+<line b="1365" baseline="1357" l="772" r="985" t="1328"><formatting lang="EnglishUnitedStates">Description</formatting></line></par>
+</text></cell>
+<cell height="77" leftBorder="White" rightBorder="White" topBorder="White" width="224">
+<text>
+<par lineSpacing="1070" startIndent="2500">
+<line b="1365" baseline="1361" l="1675" r="1739" t="1329"><formatting lang="EnglishUnitedStates">Qty</formatting></line></par>
+</text></cell>
+<cell height="77" leftBorder="White" rightBorder="White" topBorder="White" width="238">
+<text>
+<par lineSpacing="1070" startIndent="2200">
+<line b="1358" baseline="1358" l="1880" r="1972" t="1328"><formatting lang="EnglishUnitedStates">Price</formatting></line></par>
+</text></cell>
+<cell height="77" leftBorder="White" rightBorder="White" topBorder="White" width="289">
+<text>
+<par align="Right" lineSpacing="1070" rightIndent="1200">
+<line b="1358" baseline="1357" l="2160" r="2254" t="1328"><formatting lang="EnglishUnitedStates">Total</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" width="539">
+<text>
+<par lineSpacing="1070" startIndent="1200">
+<line b="1490" baseline="1490" l="227" r="650" t="1460"><formatting lang="EnglishUnitedStates">Huawei P10 Plus VKY-L29</formatting></line></par>
+<par lineSpacing="1070" startIndent="1200">
+<line b="1542" baseline="1534" l="226" r="521" t="1505"><formatting lang="EnglishUnitedStates">Single SIM 128GB</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" width="850">
+<text>
+<par leftIndent="1400" lineSpacing="1080">
+<line b="1468" baseline="1467" l="772" r="1453" t="1439"><formatting lang="EnglishUnitedStates">HUAWEI P10 PLUS SINGLE SIM 5.5" INCH</formatting></line>
+<line b="1516" baseline="1512" l="769" r="1424" t="1484"><formatting lang="EnglishUnitedStates">ANDROID FACTORY UNLOCKED 4G/LTE</formatting></line>
+<line b="1558" baseline="1557" l="771" r="1003" t="1529"><formatting lang="EnglishUnitedStates">SMARTPHONE</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" width="224">
+<text>
+<par lineSpacing="1070" startIndent="2500">
+<line b="1513" baseline="1512" l="1666" r="1737" t="1484"><formatting lang="EnglishUnitedStates">2.00</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" width="238">
+<text>
+<par align="Center" lineSpacing="1070">
+<line b="1518" baseline="1512" l="1836" r="1970" t="1483"><formatting lang="EnglishUnitedStates">$777.00</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" width="289">
+<text>
+<par lineSpacing="1070" startIndent="1500">
+<line b="1518" baseline="1512" l="2088" r="2254" t="1483"><formatting lang="EnglishUnitedStates">$1,554.00</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="539">
+<text>
+<par leftIndent="1200" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="850">
+<text>
+<par leftIndent="1400" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="224">
+<text>
+<par leftIndent="2500" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="238">
+<text>
+<par lineSpacing="1070" startIndent="900">
+<line b="1667" baseline="1667" l="1833" r="1969" t="1637"><formatting lang="EnglishUnitedStates">Subtotal</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="289">
+<text>
+<par lineSpacing="1070" startIndent="1500">
+<line b="1672" baseline="1666" l="2088" r="2254" t="1637"><formatting lang="EnglishUnitedStates">$1,554.00</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="539">
+<text>
+<par leftIndent="1200" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="850">
+<text>
+<par leftIndent="1400" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="224">
+<text>
+<par leftIndent="2500" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="238">
+<text>
+<par lineSpacing="1070" startIndent="2200">
+<line b="1774" baseline="1774" l="1876" r="1970" t="1744"><formatting lang="EnglishUnitedStates">Total</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="289">
+<text>
+<par lineSpacing="1070" startIndent="1000">
+<line b="1779" baseline="1774" l="2069" r="2255" t="1744"><formatting lang="EnglishUnitedStates">$1,398.60</formatting></line></par>
+</text></cell></row>
+<row>
+<cell bottomBorder="White" height="107" leftBorder="White" rightBorder="White" topBorder="White" width="539">
+<text>
+<par leftIndent="1200" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="107" leftBorder="White" rightBorder="White" topBorder="White" width="850">
+<text>
+<par leftIndent="1400" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="107" leftBorder="White" rightBorder="White" topBorder="White" width="224">
+<text>
+<par leftIndent="2500" lineSpacing="1070"/>
+</text></cell>
+<cell bottomBorder="White" height="107" leftBorder="White" rightBorder="White" topBorder="White" width="238">
+<text>
+<par align="Right" lineSpacing="1070" rightIndent="1100">
+<line b="1882" baseline="1881" l="1904" r="1970" t="1852"><formatting lang="EnglishUnitedStates">Paid</formatting></line></par>
+</text></cell>
+<cell bottomBorder="White" height="107" leftBorder="White" rightBorder="White" topBorder="White" width="289">
+<text>
+<par lineSpacing="1070" startIndent="3300">
+<line b="1887" baseline="1881" l="2163" r="2254" t="1852"><formatting lang="EnglishUnitedStates">$0.00</formatting></line></par>
+</text></cell></row>
+<row>
+<cell height="176" leftBorder="White" rightBorder="White" topBorder="White" width="539">
+<text>
+<par leftIndent="1200" lineSpacing="1070"/>
+</text></cell>
+<cell height="176" leftBorder="White" rightBorder="White" topBorder="White" width="850">
+<text>
+<par leftIndent="1400" lineSpacing="1070"/>
+</text></cell>
+<cell height="176" leftBorder="White" rightBorder="White" topBorder="White" width="224">
+<text>
+<par leftIndent="2500" lineSpacing="1070"/>
+</text></cell>
+<cell height="176" leftBorder="White" rightBorder="White" topBorder="White" width="238">
+<text>
+<par lineSpacing="1070" startIndent="900">
+<line b="1989" baseline="1989" l="1826" r="1972" t="1959"><formatting lang="EnglishUnitedStates">Balance</formatting></line></par>
+</text></cell>
+<cell height="176" leftBorder="White" rightBorder="White" topBorder="White" width="289">
+<text>
+<par lineSpacing="1070" startIndent="1000">
+<line b="1994" baseline="1989" l="2069" r="2255" t="1959"><formatting lang="EnglishUnitedStates">$1,398.60</formatting></line></par>
+</text></cell></row>
+</block>
+<block b="2232" blockName="" blockType="Text" l="171" r="650" t="2129"><region><rect b="2232" l="171" r="650" t="2129"/></region>
+<text>
+<par lineSpacing="1340">
+<line b="2168" baseline="2168" l="177" r="313" t="2135"><formatting lang="EnglishUnitedStates">Terms</formatting></line></par>
+<par lineSpacing="1340">
+<line b="2226" baseline="2225" l="181" r="644" t="2192"><formatting lang="EnglishUnitedStates">Pre-order for December</formatting></line></par>
+</text>
+</block>
+<block b="1401" blockName="" blockType="Separator" l="177" r="2303" t="1398"><region><rect b="1401" l="177" r="2303" t="1398"/></region>
+<separator thickness="3" type="Black"><start x="177" y="1399"/><end x="2303" y="1399"/>
+</separator>
+</block>
+<block b="2097" blockName="" blockType="Separator" l="177" r="2304" t="2091"><region><rect b="2097" l="177" r="2304" t="2091"/></region>
+<separator thickness="6" type="Black"><start x="177" y="2094"/><end x="2304" y="2094"/>
+</separator>
+</block>
+<block b="1815" blockName="" blockType="Picture" l="176" r="2304" t="1705"><region><rect b="1815" l="176" r="2304" t="1705"/></region>
+</block>
+<block b="2030" blockName="" blockType="Picture" l="176" r="2304" t="1920"><region><rect b="2030" l="176" r="2304" t="1920"/></region>
+</block>
+</page>
+</document>

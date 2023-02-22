@@ -1,0 +1,21 @@
+{
+  "monitors": [
+    {
+      "monitorClass": "EmailMonitorTask",
+      "maxLoops": 1
+    },
+    {
+      "monitorClass": "ProcessingMonitorTask",
+      "maxLoops": 1
+    },
+    {
+      "monitorClass": "SubmissionMonitorTask",
+      "maxLoops": 1
+    },
+    {
+      "monitorClass": "ErrorMonitorTask",
+      "maxLoops": 1
+    }
+  ],
+  "example.attachments.bucket.name": "doc-upload"
+}
