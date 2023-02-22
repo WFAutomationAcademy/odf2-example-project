@@ -12,3 +12,4 @@ https://doc.workfusion.com/enterprise/docs/iac/core/user-guide/odf/odf2-example-
 
 - [10.2.5.26](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.5.26)
 - [10.2.6.10](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.6.10)
+- [10.2.7.18](https://github.com/WFAutomationAcademy/odf2-example-project/tree/release/10.2.7.18)
