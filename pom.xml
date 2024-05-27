@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.workfusion.odf2.example</groupId>
+    <artifactId>odf2-example-project</artifactId>
+    <version>10.2.6.15</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <usecase.name>odf2-example-project</usecase.name>
+        <usecase.code>odf2-example-project</usecase.code>
+        <usecase.version>${project.version}</usecase.version>
+        <usecase.model-version>10.2.6</usecase.model-version>
+
+        <wf.odf2.version>10.2.6.15</wf.odf2.version>
+        <wf.bundle-versions-maven-plugin.version>0.0.21</wf.bundle-versions-maven-plugin.version>
+        <wf.bundle-maven-plugin.version>10.2.6.6</wf.bundle-maven-plugin.version>
+
+        <remote-control-tower.url>https://some-server</remote-control-tower.url>
+        <!-- Target instance properties for Spoke tests -->
+        <remote-control-tower.username>user</remote-control-tower.username>
+        <remote-control-tower.password>secret</remote-control-tower.password>
+    </properties>
+
+    <modules>
+        <module>odf2-example-project-bcb</module>
+        <module>odf2-example-project-package</module>
+        <module>odf2-example-project-test</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>wf-dependencies</id>
+            <url>https://repository.workfusion.com/content/repositories/wf-dependencies/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>wf-dependencies</id>
+            <url>https://repository.workfusion.com/content/repositories/wf-dependencies/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.workfusion.odf2</groupId>
+                <artifactId>odf2-bom</artifactId>
+                <version>${wf.odf2.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.10.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.4.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.workfusion.odf</groupId>
+                    <artifactId>bundle-versions-maven-plugin</artifactId>
+                    <version>${wf.bundle-versions-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.workfusion.odf</groupId>
+                    <artifactId>bundle-maven-plugin</artifactId>
+                    <version>${wf.bundle-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
