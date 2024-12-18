@@ -1,0 +1,229 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0002" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_exception_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="VARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_exception_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="root_transaction_uuid" type="VARCHAR(36)"/>
+            <column name="short_description" type="NVARCHAR(max)"/>
+            <column name="full_description" type="NVARCHAR(max)"/>
+            <column name="type" type="NVARCHAR(36)"/>
+            <column name="error_code" type="INT"/>
+            <column name="time_occurred" type="datetime2"/>
+            <column name="time_closed" type="datetime2  "/>
+            <column name="bp_uuid" type="NVARCHAR(36)"/>
+            <column name="bp_step_uuid" type="NVARCHAR(36)"/>
+            <column name="severity" type="NVARCHAR(36)"/>
+            <column name="screenshot_link" type="NVARCHAR(max)"/>
+            <column name="business_entity_uuid" type="NVARCHAR(36)"/>
+            <column name="status" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0003" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_monitor_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="monitor_id" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_time" type="NVARCHAR(256)"/>
+            <column name="completed_loops" type="INT"/>
+            <column name="last_polling_time" type="NVARCHAR(256)"/>
+            <column name="stopped" type="int"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0004" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_join_entity_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="parent_transaction" type="NVARCHAR(36)"/>
+            <column name="entity_uuid" type="NVARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="key" type="NVARCHAR(max)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0005" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_business_entity_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="VARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_business_entity_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="external_id" type="NVARCHAR(256)"/>
+            <column name="type" type="NVARCHAR(256)"/>
+            <column name="status" type="NVARCHAR(256)"/>
+            <column name="external_link" type="NVARCHAR(2048)"/>
+            <column name="amount" type="INT"/>
+            <column name="date" type="DATE"/>
+            <column name="original_document_url" type="NVARCHAR(2048)"/>
+            <column name="ocr_result_url" type="NVARCHAR(2048)"/>
+            <column name="number" type="NVARCHAR(256)"/>
+            <column name="payment" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0006" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_product_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="invoice_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_product_v10_2_7_uc_odf2_example_project_business_entity_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_business_entity_v10_2_7"/>
+            </column>
+            <column name="name" type="NVARCHAR(256)"/>
+            <column name="description" type="NVARCHAR(max)"/>
+            <column name="price" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0007" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_input_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="VARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_input_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="from" type="NVARCHAR(256)"/>
+            <column name="to" type="NVARCHAR(256)"/>
+            <column name="subject" type="NVARCHAR(max)"/>
+            <column name="message" type="NVARCHAR(max)"/>
+            <column name="received" type="DATE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0008" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_document_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="type" type="NVARCHAR(36)"/>
+            <column name="original_document_link" type="NVARCHAR(max)"/>
+            <column name="input_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_v10_2_7_uc_odf2_example_project_input_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_input_v10_2_7"/>
+            </column>
+            <column name="content" type="NVARCHAR(max)"/>
+            <column name="size" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0009" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_stage_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="NVARCHAR(max)"/>
+            <column name="description" type="NVARCHAR(max)"/>
+            <column name="stage_order" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0010" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_transaction_stage_log_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="stage_id" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_stage_log_v10_2_7_uc_odf2_example_project_stage_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_stage_v10_2_7"/>
+            </column>
+            <column name="transaction_uuid" type="VARCHAR(36)">
+                <constraints foreignKeyName="uc_odf2_example_project_transaction_stage_log_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="bp_uuid" type="NVARCHAR(36)"/>
+            <column name="timestamp" type="DATE"/>
+            <column name="type" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0011" objectQuotingStrategy="LEGACY">
+        <insert tableName="uc_odf2_example_project_stage_v10_2_7">
+            <column name="uuid" value="8a0fb79f-64ab-4b68-8d4f-ed9d21afb216"/>
+            <column name="name" value="markAsRead"/>
+            <column name="description" value="marking email as read"/>
+            <column name="stage_order" value="1"/>
+        </insert>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0012" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_monitor_configuration_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="monitor_class" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="polling_interval" type="NVARCHAR(256)"/>
+            <column name="sleep_time" type="NVARCHAR(256)"/>
+            <column name="max_loops" type="int"/>
+            <column name="max_running_time" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0013" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_config_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="variation_id" type="BIGINT"/>
+            <column name="name" type="NVARCHAR(450)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="NVARCHAR(max)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0014" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_ocr_cache_v10_2_7">
+            <column name="cache_key" type="NVARCHAR(256)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="document_xml_link" type="NVARCHAR(2048)"/>
+            <column name="pages" type="INT"/>
+            <column name="meta_info_pages" type="NVARCHAR(max)"/>
+            <column name="meta_info_xml_url" type="NVARCHAR(2048)"/>
+            <column name="creation_time" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0015" objectQuotingStrategy="LEGACY">
+        <modifyDataType columnName="short_description" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_exception_v10_2_7"/>
+        <modifyDataType columnName="screenshot_link" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_exception_v10_2_7"/>
+        <modifyDataType columnName="key" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_join_entity_v10_2_7"/>
+        <modifyDataType columnName="description" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_product_v10_2_7"/>
+        <modifyDataType columnName="subject" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_input_v10_2_7"/>
+        <modifyDataType columnName="message" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_input_v10_2_7"/>
+        <modifyDataType columnName="original_document_link" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_document_v10_2_7"/>
+        <modifyDataType columnName="content" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_document_v10_2_7"/>
+        <modifyDataType columnName="name" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_stage_v10_2_7"/>
+        <modifyDataType columnName="description" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_stage_v10_2_7"/>
+        <modifyDataType columnName="value" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_config_v10_2_7"/>
+        <modifyDataType columnName="meta_info_pages" newDataType="NVARCHAR(4000)" tableName="uc_odf2_example_project_ocr_cache_v10_2_7"/>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0016" objectQuotingStrategy="LEGACY">
+        <addColumn tableName="uc_odf2_example_project_transaction_v10_2_7">
+            <column name="skip_until" type="NVARCHAR(256)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0017" objectQuotingStrategy="LEGACY">
+        <createTable tableName="uc_odf2_example_project_pdf_page_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="transaction_uuid" type="VARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_pdf_page_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false" referencedColumnNames="uuid" referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="ocr_result_url" type="NVARCHAR(2048)"/>
+            <column name="original_document_link" type="NVARCHAR(2048)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0018" objectQuotingStrategy="LEGACY">
+        <dropColumn tableName="uc_odf2_example_project_business_entity_v10_2_7">
+            <column name="ocr_result_url"/>
+        </dropColumn>
+    </changeSet>
+    <changeSet author="ODF2 example project" id="odf2_example_project_v10_2_7_0019" objectQuotingStrategy="LEGACY">
+        <modifyDataType columnName="split_status" newDataType="NVARCHAR(255)" tableName="uc_odf2_example_project_transaction_v10_2_7"/>
+    </changeSet>
+</databaseChangeLog>
