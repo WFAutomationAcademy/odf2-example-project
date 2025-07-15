@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="PATTERN" value='%d{"yyyy-MM-dd HH:mm:ss,SSS Z"} %highlight(%-5level) [%thread] %logger - %msg%n' />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="com.workfusion.odf2" level="DEBUG"/>
+    <logger name="com.workfusion.studio.maven" level="INFO"/>
+
+    <logger name="org.apache.qpid" level="WARN"/>
+    <logger name="qpid" level="WARN"/>
+    <logger name="org.mockserver.log.MockServerEventLog" level="WARN"/>
+
+    <logger name="com.freedomoss.crowdcontrol.webharvest.plugin" level="INFO"/>
+    <logger name="shaded_package" level="INFO"/>
+    <logger name="com.j256.ormlite" level="WARN" />
+
+</configuration>

@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: odf2_example_project_v10_2_7_0001
+      author: ODF2 example project
+      objectQuotingStrategy: LEGACY
+      preConditions:
+        not:
+          tableExists:
+            tableName: uc_odf2_example_project_transaction_v10_2_7
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    unique: true
+                  defaultValueComputed: NEWID()
+                  name: uuid
+                  type: NVARCHAR(36)
+              - column:
+                  name: parent_uuid
+                  type: NVARCHAR(36)
+              - column:
+                  name: start_time
+                  type: DATETIME2
+              - column:
+                  name: end_time
+                  type: DATETIME2
+              - column:
+                  name: status
+                  type: NVARCHAR(36)
+              - column:
+                  name: error_status
+                  type: NVARCHAR(36)
+              - column:
+                  name: start_bp_uuid
+                  type: NVARCHAR(36)
+              - column:
+                  name: is_stp
+                  type: INT
+              - column:
+                  name: split_status
+                  type: NVARCHAR(36)
+              - column:
+                  name: variation_id
+                  type: BIGINT
+            tableName: uc_odf2_example_project_transaction_v10_2_7
+
