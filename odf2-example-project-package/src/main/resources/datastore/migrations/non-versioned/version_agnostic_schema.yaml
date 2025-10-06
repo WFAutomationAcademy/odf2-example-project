@@ -1,0 +1,73 @@
+databaseChangeLog:
+- changeSet:
+    id: odf2_example_project_0001
+    author: ODF2 example project
+    objectQuotingStrategy: LEGACY
+    changes:
+    - createTable:
+        columns:
+        - column:
+            name: transaction_id
+            type: VARCHAR(36)
+        - column:
+            name: version
+            type: VARCHAR(20)
+        - column:
+            name: bp_locale
+            type: VARCHAR(2)
+        - column:
+            name: search_request
+            type: NVARCHAR(max)
+        - column:
+            name: status
+            type: VARCHAR(20)
+        - column:
+            name: is_purged
+            type: VARCHAR(1)
+        - column:
+            name: search_date
+            type: VARCHAR(30)
+        - column:
+            name: timestamp
+            type: VARCHAR(30)
+        - column:
+            name: is_investigation_triggered
+            type: VARCHAR(1)
+        - column:
+            name: campaign_uuid
+            type: VARCHAR(36)
+        - column:
+            name: run_uuid
+            type: VARCHAR(36)
+        - column:
+            name: input_starttime
+            type: VARCHAR(30)
+        - column:
+            name: input_endtime
+            type: VARCHAR(30)
+        - column:
+            name: processing_starttime
+            type: VARCHAR(30)
+        - column:
+            name: processing_endtime
+            type: VARCHAR(30)
+        - column:
+            name: review_starttime
+            type: VARCHAR(30)
+        - column:
+            name: review_endtime
+            type: VARCHAR(30)
+        - column:
+            name: output_starttime
+            type: VARCHAR(30)
+        - column:
+            name: output_endtime
+            type: VARCHAR(30)
+        - column:
+            name: worker_id
+            type: VARCHAR(36)
+        - column:
+            name: worker_full_name
+            type: NVARCHAR(max)
+        tableName: uc_odf2_example_project_searches_analytics
+
