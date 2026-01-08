@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?><document xmlns="http://ocr.crowdcomputingsystems.com/xml/schema-v1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" languages="" producer="Workfusion" version="1.0" xsi:schemaLocation="http://ocr.crowdcomputingsystems.com/xml/schema-v1.xml">
+    <page height="3508" resolution="300" width="2480">
+        <block b="364" blockName="" blockType="Text" l="171" r="213" t="320"><region><rect b="364" l="171" r="213" t="320"/></region>
+            <text>
+                <par align="Justified" lineSpacing="1340">
+                    <line b="358" baseline="358" l="177" r="207" t="326"><formatting lang="EnglishUnitedStates">A</formatting></line></par>
+            </text>
+        </block>
+        <block b="372" blockName="" blockType="Text" l="1869" r="2306" t="319"><region><rect b="372" l="1869" r="2306" t="319"/></region>
+            <text>
+                <par lineSpacing="1340">
+                    <line b="366" baseline="358" l="1875" r="2300" t="325"><formatting lang="EnglishUnitedStates">wf-robot@mail.com</formatting></line></par>
+            </text>
+        </block>
+        <block b="972" blockName="" blockType="Text" l="179" r="735" t="892"><region><rect b="972" l="179" r="735" t="892"/></region>
+            <text>
+                <par lineSpacing="2810">
+                    <line b="967" baseline="966" l="185" r="729" t="899"><formatting lang="EnglishUnitedStates">Invoice 56806</formatting></line></par>
+            </text>
+        </block>
+        <block b="796" blockName="" blockType="Text" l="1551" r="1855" t="556"><region><rect b="796" l="1551" r="1855" t="556"/></region>
+            <text>
+                <par lineSpacing="1200" startIndent="1800">
+                    <line b="592" baseline="592" l="1632" r="1849" t="562"><formatting lang="EnglishUnitedStates">Invoice Date:</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="656" baseline="656" l="1684" r="1849" t="627"><formatting lang="EnglishUnitedStates">Due Date:</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="719" baseline="718" l="1629" r="1849" t="690"><formatting lang="EnglishUnitedStates">Amount Due:</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="790" baseline="782" l="1557" r="1849" t="753"><formatting lang="EnglishUnitedStates">Payment Method:</formatting></line></par>
+            </text>
+        </block>
+        <block b="796" blockName="" blockType="Text" l="2053" r="2307" t="557"><region><rect b="796" l="2053" r="2307" t="557"/></region>
+            <text>
+                <par align="Right" lineSpacing="1200">
+                    <line b="595" baseline="592" l="2111" r="2301" t="563"><formatting lang="EnglishUnitedStates">06/07/2023</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="659" baseline="656" l="2111" r="2301" t="627"><formatting lang="EnglishUnitedStates">07/07/2023</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="724" baseline="719" l="2059" r="2301" t="689"><formatting lang="EnglishUnitedStates">$2,279,315.85</formatting></line></par>
+                <par align="Right" lineSpacing="1200">
+                    <line b="790" baseline="783" l="2194" r="2300" t="753"><formatting lang="EnglishUnitedStates">Paypal</formatting></line></par>
+            </text>
+        </block>
+        <block b="3068" blockName="" blockType="Table" l="170" r="2310" t="1090"><region><rect b="3068" l="170" r="2310" t="1090"/></region>
+            <row>
+                <cell height="76" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="1126" baseline="1125" l="227" r="309" t="1097"><formatting lang="EnglishUnitedStates">Item</formatting></line></par>
+                    </text></cell>
+                <cell height="76" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1500">
+                            <line b="1133" baseline="1125" l="734" r="947" t="1096"><formatting lang="EnglishUnitedStates">Description</formatting></line></par>
+                    </text></cell>
+                <cell height="76" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Center" lineSpacing="1200">
+                            <line b="1133" baseline="1128" l="1516" r="1581" t="1097"><formatting lang="EnglishUnitedStates">Qty</formatting></line></par>
+                    </text></cell>
+                <cell height="76" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="3600">
+                            <line b="1126" baseline="1126" l="1797" r="1888" t="1096"><formatting lang="EnglishUnitedStates">Price</formatting></line></par>
+                    </text></cell>
+                <cell height="76" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Right" lineSpacing="1200" rightIndent="1200">
+                            <line b="1126" baseline="1126" l="2160" r="2254" t="1096"><formatting lang="EnglishUnitedStates">Total</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="109" leftBorder="White" rightBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="1242" baseline="1234" l="226" r="390" t="1205"><formatting lang="EnglishUnitedStates">Sony Vaio</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="109" leftBorder="White" rightBorder="White" width="791">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1500">
+                            <line b="1238" baseline="1234" l="732" r="1302" t="1205"><formatting lang="EnglishUnitedStates">Windows 7,512GB HDD, 4GB RAM</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="109" leftBorder="White" rightBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="1235" baseline="1235" l="1510" r="1579" t="1206"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="109" leftBorder="White" rightBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="2600">
+                            <line b="1240" baseline="1235" l="1753" r="1887" t="1205"><formatting lang="EnglishUnitedStates">$879.99</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="109" leftBorder="White" rightBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="3300">
+                            <line b="1240" baseline="1235" l="2120" r="2254" t="1205"><formatting lang="EnglishUnitedStates">$879.99</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="1351" baseline="1344" l="224" r="460" t="1314"><formatting lang="EnglishUnitedStates">Apple iMac 30</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1500">
+                            <line b="1351" baseline="1344" l="731" r="1210" t="1314"><formatting lang="EnglishUnitedStates">Apple iMac 30, basic version</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="1344" baseline="1343" l="1510" r="1579" t="1315"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1800">
+                            <line b="1349" baseline="1343" l="1721" r="1887" t="1314"><formatting lang="EnglishUnitedStates">$1,363.99</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="108" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2500">
+                            <line b="1349" baseline="1343" l="2088" r="2254" t="1314"><formatting lang="EnglishUnitedStates">$1,363.99</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="242" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par leftIndent="1200" lineSpacing="1104">
+                            <line b="1474" baseline="1474" l="227" r="602" t="1444"><formatting lang="EnglishUnitedStates">Huawei Honor 6X Dual</formatting></line>
+                            <line b="1519" baseline="1519" l="226" r="521" t="1489"><formatting lang="EnglishUnitedStates">Camera Unlocked</formatting></line></par>
+                        <par lineSpacing="1104" startIndent="1200">
+                            <line b="1571" baseline="1563" l="226" r="482" t="1534"><formatting lang="EnglishUnitedStates">Smartphone 32</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="242" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1088">
+                            <line b="1451" baseline="1451" l="734" r="1395" t="1421"><formatting lang="EnglishUnitedStates">Dual Lenses Deliver Professional-Grade</formatting></line>
+                            <line b="1503" baseline="1496" l="734" r="1178" t="1466"><formatting lang="EnglishUnitedStates">lmages. More Filters, More</formatting></line>
+                            <line b="1548" baseline="1541" l="733" r="1337" t="1511"><formatting lang="EnglishUnitedStates">Creativity, More Memories to Share.</formatting></line>
+                            <line b="1586" baseline="1586" l="731" r="946" t="1556"><formatting lang="EnglishUnitedStates">Vivid Photos.</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="242" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="1519" baseline="1518" l="1510" r="1579" t="1490"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="242" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="2600">
+                            <line b="1524" baseline="1518" l="1753" r="1887" t="1489"><formatting lang="EnglishUnitedStates">$179.99</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="242" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="3300">
+                            <line b="1524" baseline="1518" l="2120" r="2254" t="1489"><formatting lang="EnglishUnitedStates">$179.99</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="155" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="1723" baseline="1715" l="227" r="480" t="1686"><formatting lang="EnglishUnitedStates">HP Envy j110tx</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="155" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1080">
+                            <line b="1697" baseline="1694" l="732" r="1319" t="1664"><formatting lang="EnglishUnitedStates">Windows-10, 1TB HDD, 2GB Nvidia</formatting></line>
+                            <line b="1746" baseline="1739" l="733" r="1128" t="1709"><formatting lang="EnglishUnitedStates">Graphic Card, 8GB RAM</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="155" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="1716" baseline="1715" l="1510" r="1579" t="1687"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="155" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1300">
+                            <line b="1721" baseline="1715" l="1699" r="1887" t="1686"><formatting lang="EnglishUnitedStates">$71,500.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="155" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2000">
+                            <line b="1721" baseline="1715" l="2066" r="2254" t="1686"><formatting lang="EnglishUnitedStates">$71,500.00</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="239" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="1921" baseline="1914" l="224" r="498" t="1884"><formatting lang="EnglishUnitedStates">Apple Iphone 6S</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="239" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1088">
+                            <line b="1853" baseline="1846" l="734" r="1389" t="1816"><formatting lang="EnglishUnitedStates">It makes sense that Apple would try its</formatting></line>
+                            <line b="1898" baseline="1890" l="734" r="1292" t="1861"><formatting lang="EnglishUnitedStates">hardest to show that, despite the</formatting></line>
+                            <line b="1943" baseline="1936" l="734" r="1389" t="1906"><formatting lang="EnglishUnitedStates">handset looking identical to the iPhone</formatting></line>
+                            <line b="1981" baseline="1981" l="733" r="751" t="1952"><formatting lang="EnglishUnitedStates">6</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="239" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="1914" baseline="1913" l="1510" r="1579" t="1885"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="239" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1300">
+                            <line b="1919" baseline="1913" l="1699" r="1887" t="1884"><formatting lang="EnglishUnitedStates">$25,559.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="239" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2000">
+                            <line b="1919" baseline="1913" l="2066" r="2254" t="1884"><formatting lang="EnglishUnitedStates">$25,559.00</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="337" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par leftIndent="1200" lineSpacing="1080">
+                            <line b="2186" baseline="2179" l="224" r="599" t="2149"><formatting lang="EnglishUnitedStates">Apple iPhone 7 256GB</formatting></line>
+                            <line b="2224" baseline="2223" l="226" r="539" t="2194"><formatting lang="EnglishUnitedStates">4G LTE GSM - Gold</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="337" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1080">
+                            <line b="2096" baseline="2089" l="733" r="1372" t="2059"><formatting lang="EnglishUnitedStates">4.7 -inch (diagonal) Retina HD display</formatting></line>
+                            <line b="2141" baseline="2133" l="732" r="1381" t="2104"><formatting lang="EnglishUnitedStates">with 1334 -by-750 resolution and wide</formatting></line>
+                            <line b="2186" baseline="2179" l="733" r="1315" t="2149"><formatting lang="EnglishUnitedStates">color; 12MP camera, optical image</formatting></line>
+                            <line b="2228" baseline="2223" l="733" r="1406" t="2194"><formatting lang="EnglishUnitedStates">stabilization Quad-LED True Tone flash</formatting></line>
+                            <line b="2276" baseline="2269" l="733" r="1347" t="2239"><formatting lang="EnglishUnitedStates">and Live Photos; A9 Fusion chip with</formatting></line>
+                            <line b="2321" baseline="2313" l="734" r="1312" t="2284"><formatting lang="EnglishUnitedStates">integrated M9 motion coprocessor</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="337" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="2201" baseline="2200" l="1510" r="1579" t="2172"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="337" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1800">
+                            <line b="2206" baseline="2200" l="1721" r="1887" t="2171"><formatting lang="EnglishUnitedStates">$1,050.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="337" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2500">
+                            <line b="2206" baseline="2200" l="2088" r="2254" t="2171"><formatting lang="EnglishUnitedStates">$1,050.00</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="151" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="2444" baseline="2444" l="227" r="503" t="2414"><formatting lang="EnglishUnitedStates">Dell Vostro 3000</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="151" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1500">
+                            <line b="2425" baseline="2421" l="734" r="1356" t="2391"><formatting lang="EnglishUnitedStates">Dell Vostro 3000 Core i5 7th Gen - (8</formatting></line></par>
+                        <par lineSpacing="1070" startIndent="1500">
+                            <line b="2473" baseline="2465" l="733" r="1353" t="2436"><formatting lang="EnglishUnitedStates">GB/1 TB HDD/Ubuntu/2 GB Graphics)</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="151" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="2444" baseline="2443" l="1510" r="1579" t="2415"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="151" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1300">
+                            <line b="2449" baseline="2443" l="1699" r="1887" t="2414"><formatting lang="EnglishUnitedStates">$76,000.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="151" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2000">
+                            <line b="2449" baseline="2443" l="2066" r="2254" t="2414"><formatting lang="EnglishUnitedStates">$76,000.00</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="196" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par leftIndent="1200" lineSpacing="1080">
+                            <line b="2574" baseline="2573" l="227" r="602" t="2544"><formatting lang="EnglishUnitedStates">Huawei Honor 6X Dual</formatting></line>
+                            <line b="2619" baseline="2618" l="226" r="521" t="2589"><formatting lang="EnglishUnitedStates">Camera Unlocked</formatting></line></par>
+                        <par lineSpacing="1080" startIndent="1200">
+                            <line b="2671" baseline="2663" l="226" r="482" t="2634"><formatting lang="EnglishUnitedStates">Smartphone 32</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="196" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1092">
+                            <line b="2574" baseline="2574" l="734" r="1395" t="2544"><formatting lang="EnglishUnitedStates">Dual Lenses Deliver Professional-Grade</formatting></line>
+                            <line b="2626" baseline="2619" l="734" r="1363" t="2589"><formatting lang="EnglishUnitedStates">Images. More Filters, More Creativity,</formatting></line>
+                            <line b="2664" baseline="2664" l="734" r="1381" t="2634"><formatting lang="EnglishUnitedStates">More Memories to Share. Vivid Photos.</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="196" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="2619" baseline="2618" l="1510" r="1579" t="2590"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="196" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="2600">
+                            <line b="2624" baseline="2618" l="1753" r="1887" t="2589"><formatting lang="EnglishUnitedStates">$179.99</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="196" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="3300">
+                            <line b="2624" baseline="2618" l="2120" r="2254" t="2589"><formatting lang="EnglishUnitedStates">$179.99</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1200">
+                            <line b="2771" baseline="2770" l="227" r="474" t="2741"><formatting lang="EnglishUnitedStates">Huawei Mate S</formatting></line></par>
+                        <par lineSpacing="1100" startIndent="1200">
+                            <line b="2823" baseline="2816" l="227" r="597" t="2786"><formatting lang="EnglishUnitedStates">Unlocked Smartphone</formatting></line></par>
+                        <par lineSpacing="1050" startIndent="1200">
+                            <line b="2861" baseline="2861" l="227" r="468" t="2831"><formatting lang="EnglishUnitedStates">5.5 Inch Hisilic</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1080">
+                            <line b="2774" baseline="2771" l="734" r="1288" t="2741"><formatting lang="EnglishUnitedStates">Kirin 935 EMUI 3.1, octa Core 4 x</formatting></line>
+                            <line b="2819" baseline="2815" l="733" r="1244" t="2786"><formatting lang="EnglishUnitedStates">2.2GHz + 4 x 1.5GHz; 5.5 inch</formatting></line>
+                            <line b="2868" baseline="2860" l="733" r="1122" t="2831"><formatting lang="EnglishUnitedStates">Capacitive, FHD screen</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="2816" baseline="2815" l="1510" r="1579" t="2787"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="1800">
+                            <line b="2821" baseline="2815" l="1721" r="1887" t="2786"><formatting lang="EnglishUnitedStates">$1,269.99</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="199" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="2500">
+                            <line b="2821" baseline="2815" l="2088" r="2254" t="2786"><formatting lang="EnglishUnitedStates">$1,269.99</formatting></line></par>
+                    </text></cell></row>
+            <row>
+                <cell bottomBorder="White" height="166" leftBorder="White" rightBorder="White" topBorder="White" width="495">
+                    <text>
+                        <par align="Center" lineSpacing="1080">
+                            <line b="2991" baseline="2991" l="227" r="590" t="2961"><formatting lang="EnglishUnitedStates">Huawei P10 Plus VKY-</formatting></line>
+                            <line b="3043" baseline="3036" l="227" r="594" t="3006"><formatting lang="EnglishUnitedStates">L29 Single SIM 128GB</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="166" leftBorder="White" rightBorder="White" topBorder="White" width="791">
+                    <text>
+                        <par leftIndent="1500" lineSpacing="1080">
+                            <line b="2969" baseline="2968" l="734" r="1320" t="2940"><formatting lang="EnglishUnitedStates">HUAWEI P10 PLUS SINGLE SIM 5.5"</formatting></line>
+                            <line b="3014" baseline="3013" l="734" r="1351" t="2985"><formatting lang="EnglishUnitedStates">INCH ANDROID FACTORY UNLOCKED</formatting></line>
+                            <line b="3062" baseline="3058" l="733" r="1096" t="3030"><formatting lang="EnglishUnitedStates">4G/LTE SMARTPHONE</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="166" leftBorder="White" rightBorder="White" topBorder="White" width="184">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="1200">
+                            <line b="3014" baseline="3013" l="1510" r="1579" t="2985"><formatting lang="EnglishUnitedStates">1.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="166" leftBorder="White" rightBorder="White" topBorder="White" width="337">
+                    <text>
+                        <par lineSpacing="1200" startIndent="2600">
+                            <line b="3019" baseline="3013" l="1753" r="1887" t="2984"><formatting lang="EnglishUnitedStates">$777.00</formatting></line></par>
+                    </text></cell>
+                <cell bottomBorder="White" height="166" leftBorder="White" rightBorder="White" topBorder="White" width="333">
+                    <text>
+                        <par align="Justified" lineSpacing="1200" startIndent="3300">
+                            <line b="3019" baseline="3013" l="2120" r="2254" t="2984"><formatting lang="EnglishUnitedStates">$777.00</formatting></line></par>
+                    </text></cell></row>
+        </block>
+        <block b="1168" blockName="" blockType="Separator" l="177" r="2303" t="1165"><region><rect b="1168" l="177" r="2303" t="1165"/></region>
+            <separator thickness="3" type="Black"><start x="177" y="1166"/><end x="2303" y="1166"/>
+            </separator>
+        </block>
+        <block b="1627" blockName="" blockType="Picture" l="176" r="2304" t="1382"><region><rect b="1627" l="176" r="2304" t="1382"/></region>
+        </block>
+        <block b="2022" blockName="" blockType="Picture" l="176" r="2304" t="1777"><region><rect b="2022" l="176" r="2304" t="1777"/></region>
+        </block>
+        <block b="2902" blockName="" blockType="Picture" l="176" r="2304" t="2702"><region><rect b="2902" l="176" r="2304" t="2702"/></region>
+        </block>
+        <block b="2507" blockName="" blockType="Picture" l="176" r="2304" t="2352"><region><rect b="2507" l="176" r="2304" t="2352"/></region>
+        </block>
+    </page>
+</document>

@@ -1,0 +1,209 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+    This file contains Liquibase migrations for the 'odf2-core' data model.
+    Manual changes to the file may cause instability and unpredictable behavior.
+    The file is intended to be updated exclusively by the 'Bundle Maven plugin'.
+    It is strongly advised to follow the designated automated process using this plugin for any modifications.
+-->
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0001" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_transaction_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_transaction_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="parent_uuid" type="NVARCHAR(36)"/>
+            <column name="start_time" type="datetime2"/>
+            <column name="end_time" type="datetime2"/>
+            <column name="status" type="NVARCHAR(36)"/>
+            <column name="error_status" type="NVARCHAR(36)"/>
+            <column name="start_bp_uuid" type="NVARCHAR(36)"/>
+            <column name="is_stp" type="int"/>
+            <column name="split_status" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0002" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="ds_uc_odf2_example_project_transaction_v10_2_7"/>
+            <not>
+                <columnExists tableName="ds_uc_odf2_example_project_transaction_v10_2_7" columnName="variation_id"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="uc_odf2_example_project_transaction_v10_2_7">
+            <column name="variation_id" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0003" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_stage_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_stage_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="NVARCHAR(256)"/>
+            <column name="description" type="NVARCHAR(4000)"/>
+            <column name="stage_order" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0004" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_transaction_stage_log_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_transaction_stage_log_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="stage_id" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_stage_log_v10_2_7_uc_odf2_example_project_stage_v10_2_7" nullable="false"
+                             referencedColumnNames="uuid"
+                             referencedTableName="uc_odf2_example_project_stage_v10_2_7"/>
+            </column>
+            <column name="transaction_uuid" type="NVARCHAR(36)">
+                <constraints foreignKeyName="fk_uc_odf2_example_project_transaction_stage_log_v10_2_7_uc_odf2_example_project_transaction_v10_2_7" nullable="false"
+                             referencedColumnNames="uuid"
+                             referencedTableName="uc_odf2_example_project_transaction_v10_2_7"/>
+            </column>
+            <column name="bp_uuid" type="NVARCHAR(36)"/>
+            <column name="timestamp" type="DATE"/>
+            <column name="type" type="NVARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0005" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_config_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_config_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="NVARCHAR(450)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="NVARCHAR(4000)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0006" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="ds_uc_odf2_example_project_config_v10_2_7"/>
+            <not>
+                <columnExists tableName="ds_uc_odf2_example_project_config_v10_2_7" columnName="variation_id"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="uc_odf2_example_project_config_v10_2_7">
+            <column name="variation_id" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0007" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_monitor_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_monitor_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="monitor_id" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_time" type="NVARCHAR(256)"/>
+            <column name="completed_loops" type="INT"/>
+            <column name="last_polling_time" type="NVARCHAR(256)"/>
+            <column name="stopped" type="int"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0008" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="ds_uc_odf2_example_project_monitor_v10_2_7"/>
+            <not>
+                <columnExists tableName="ds_uc_odf2_example_project_monitor_v10_2_7" columnName="variation_id"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="uc_odf2_example_project_monitor_v10_2_7">
+            <column name="variation_id" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0009" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_monitor_configuration_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_monitor_configuration_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="monitor_class" type="NVARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="polling_interval" type="NVARCHAR(256)"/>
+            <column name="sleep_time" type="NVARCHAR(256)"/>
+            <column name="max_loops" type="int"/>
+            <column name="max_running_time" type="NVARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0010" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="ds_uc_odf2_example_project_monitor_configuration_v10_2_7"/>
+            <not>
+                <columnExists tableName="ds_uc_odf2_example_project_monitor_configuration_v10_2_7" columnName="variation_id"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="uc_odf2_example_project_monitor_configuration_v10_2_7">
+            <column name="variation_id" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0011" objectQuotingStrategy="LEGACY">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="ds_uc_odf2_example_project_join_entity_v10_2_7"/>
+            </not>
+        </preConditions>
+        <createTable tableName="uc_odf2_example_project_join_entity_v10_2_7">
+            <column defaultValueComputed="NEWID()" name="uuid" type="NVARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="parent_transaction" type="NVARCHAR(36)"/>
+            <column name="entity_uuid" type="NVARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="key" type="NVARCHAR(max)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0012" objectQuotingStrategy="LEGACY">
+        <addColumn tableName="uc_odf2_example_project_transaction_v10_2_7">
+            <column name="skip_until" type="NVARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="odf2-core" id="odf2_example_project_v10_2_7_0af22dd2_103f_4684_a237_5d7c38377a48_0013" objectQuotingStrategy="LEGACY">
+        <modifyDataType columnName="split_status" newDataType="NVARCHAR(255)" tableName="uc_odf2_example_project_transaction_v10_2_7"/>
+    </changeSet>
+</databaseChangeLog>
